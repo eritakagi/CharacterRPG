@@ -1,18 +1,21 @@
 
 public class Character {
-	public int hp;
-	public int MagicPower;
-	public String name;
+	private int hp;
+	private int magicpower;
+	private String name;
 
-	public Character(int hp, int Maryoku, String name) {
+	public Character(int hp, int maryoku, String name) {
 		this.hp = hp;
-		this.MagicPower = Maryoku;
+		this.magicpower = maryoku;
 		this.name = name;
+	}
+	public String getName() {
+		return name;
 	}
 
 
 	public void introduce() {
-		System.out.println("私の名前は"+name+"。体力は"+hp+"あり、魔力の保有量は、"+MagicPower+"です。");
+		System.out.println("私の名前は"+name+"。体力は"+hp+"あり、魔力の保有量は、"+magicpower+"です。");
 	}
 	public void fight() {
 		hp-=1;

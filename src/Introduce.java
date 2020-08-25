@@ -10,6 +10,9 @@ public class Introduce {
 		n.introduce();
 		o.introduce();
 		w.introduce();
+
+		o.getName();
+		w.getName();
 		System.out.println("----"+o.name+"と、"+w.name+"は戦いを始めたようだ。");
 		o.fight();
 		w.fight();
